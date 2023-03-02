@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strncat - a custom to concatinating two strings
- * @dest: The pointer to the char
- * @src: The pointer to the char
- * @n: The size of the src memory address
- * Return: dest, a concatinated string
+ * _strncat - a custom to concatinating two strings.
+ * @dest: The pointer to the char.
+ * @src: The pointer to the char.
+ * @n: The size of the src memory address.
+ * Return: dest, a concatinated string.
  */
 
 char *_strncat(char *dest, char *src, int n)
