@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	int i, j;
-	char string_1 = 'AaEeOoTtLl';
+	char string_1[] = "AaEeOoTtLl";
 	char code[5] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != '\0'; i++)
