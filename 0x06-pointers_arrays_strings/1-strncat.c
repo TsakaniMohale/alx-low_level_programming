@@ -17,12 +17,11 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (dest[a])
 		c++;
-
-	a = 0;
-	while (a < n && src[a])
+	 
+	for (a = 0;a < n && src[a]; a++)
 	{
 		dest[c++] = src[a];
-		a++;
+
 	}
 	return (dest);
 }
