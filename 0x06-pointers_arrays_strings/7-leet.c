@@ -13,7 +13,7 @@ char *leet(char *s)
 	char code[5] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != '\0'; i++)
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (s[i] == string_1[j])
 				s[i] = code[j];
