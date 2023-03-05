@@ -16,11 +16,10 @@ void more_numbers(void)
 
 				if (j >=10)
 				{
-					_putcher(j / 10 +'0');
-					
+					_putchar(j / 10 +'0');
 				}
-		_putcher(j%10 + '0')
-
+		_putchar(j%10 + '0');
 	}
 	i++;
-	_putcher('\n');
+	_putchar('\n');
+}
