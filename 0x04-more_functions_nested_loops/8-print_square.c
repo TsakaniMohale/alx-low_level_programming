@@ -4,7 +4,7 @@
  * print _sauare - prints a square
  * @size: the size of the square
  *
- * Return: void 
+ * Return: void
  */
 void print_square(int size)
 {
@@ -26,6 +26,3 @@ void print_square(int size)
 		i++;
 	}
 }
-
-
-					
