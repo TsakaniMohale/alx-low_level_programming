@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print _sauare - prints a square
+ * print_square - prints a square
  * @size: the size of the square
  *
- * Return: void 
+ * Return: void
  */
 void print_square(int size)
 {
@@ -12,7 +12,7 @@ void print_square(int size)
 
 	if (size <= 0)
 	{
-		_putchar('\n';)
+		_putchar('\n');
 	}
 
 	i = 0;
@@ -26,6 +26,3 @@ void print_square(int size)
 		i++;
 	}
 }
-
-
-					
