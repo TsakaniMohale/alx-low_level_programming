@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * _puts - prints a string.
+ * _puts - prints a string folloewd by a new line.
  *
- * This function prints a string.
+ * This function prints a string followed by a new line.
  *
- * @str pointer to the char.
+ * @str: pointer to the char(string) to be printed.
  */
 
 void _puts(char *str)
