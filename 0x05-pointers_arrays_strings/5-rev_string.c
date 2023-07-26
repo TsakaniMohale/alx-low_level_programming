@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reverse_string - Reverse a given string in place.
+ * rev_string - Reverse a given string in place.
  *
  * This function takes a string as inputiand reverse a given string in place.
  *
@@ -9,19 +9,20 @@
 
 void reverse_string(char *s)
 {
-	int length = 0;
-	char temp;
+	int a = 0;
+	char rev_s = s[0];
 
-	while (s[length] != '\0')
+	while (s[count] != '\0')
 	{
-		length++;
+		count++;
 	}
 
-	for (int a = 0; a < length / 2; a++)
+	for (int a = 0; count; a++)
 
 	{
-		temp = s[a];
-		s[a] = s[length - 1 - a];
-		s[length - 1 - a] = temp;
+		count--;
+		rev_s = s[a];
+		s[a] = s[count];
+		s[count] = rev_s;
 	}
 }
