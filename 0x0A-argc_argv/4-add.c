@@ -1,29 +1,30 @@
 #include "main.h"
 
 /**
- * main - The program starts here.
- * @argc: commands counts.
- * @argv: commands values.
- * Return: 0 on success
+ * main - Execution start, sum all the numbers.
+ * @argc: Number of arguments.
+ * @argv: Array of arguments.
+ * Return: 0 or 1, on success or failure respectively.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	long int a = 1, addi_res = 0;
+	long int i, sum = 0;
 
 	if (argc > 1)
 	{
-		for (; a != argc; a++)
+		for (i = 0; i != argc; i++)
 		{
-			if (*argv[i] < '0' || *argv[a] > '9')
+			if (*argv[i] < '0' || *argv[i] > '9')
 			{
 				printf("Error\n");
+
 				return (1);
 			}
-			addi_res = addi_res + atoi(argv[a]);
-		}
-		printf("%ld\n", addi_res);
+			sum = sum + atoi(argv[i]);
+		} printf("%ld\n", sum);
 	} else
-		printf("%ld\n", addi_res);
+		printf("%ld\n", sum);
+
 	return (0);
 }
