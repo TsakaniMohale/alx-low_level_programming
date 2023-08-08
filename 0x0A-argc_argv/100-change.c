@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 
 		return (1);
 	}
+
 	tot_amnt = atoi(argv[1]);
 	min_coins = 0;
 
