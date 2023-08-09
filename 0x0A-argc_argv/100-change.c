@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 
 	if (tot_amnt < 0)
 	{
-		printf("\n");
+		printf("0\n");
 
 		return (0);
 	}
