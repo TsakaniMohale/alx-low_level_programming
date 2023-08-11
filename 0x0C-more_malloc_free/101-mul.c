@@ -29,6 +29,6 @@ int main(int argc, char **argv)
 		}
 	}
 
-	printf("%lu\n", (atoi(argv[1]) * atoi(argv[2])));
+	printf("%u\n", (atoi(argv[1]) * atoi(argv[2])));
 	return (0);
 }
