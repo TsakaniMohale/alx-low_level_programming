@@ -3,5 +3,5 @@
 
 #define SIZE 1024
 
-#endif /*SIZE_MACRO_H*/
+#endif /* SIZE_MACRO_H */
 
