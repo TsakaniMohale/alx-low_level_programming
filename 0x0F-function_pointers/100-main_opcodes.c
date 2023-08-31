@@ -16,32 +16,32 @@
 int main(int argc, char *argv[])
 {
 	int a, n_bytes;
-	int (*opcodes)(int, char **);
+	in (*opcodes)(int, char **);
 
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
-	}
+		exit(1);
+	}   
 
 	n_bytes = atoi(argv[1]);
 
-	if (num_bytes <= 0)
+	if (n_bytes <= 0)
 
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 
 	opcodes = main;
 
-	for (a = 0; a < n_bytes; i++)
+	for (a = 0; a < n_bytes; a++)
 
 	{
 		printf("%02x", *(unsigned char *)opcodes);
 
-		if (a == nbytes - 1)
+		if (a == n_bytes - 1)
 			continue;
 		printf(" ");
 		opcodes++;
