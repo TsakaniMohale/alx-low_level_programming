@@ -15,38 +15,39 @@
 
 int main(int argc, char *argv[])
 {
-	int a, n_bytes;
-	in (*opcodes)(int, char **);
+	int bytes, i;
+	char *arr;
 
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
-	}   
+	}
 
-	n_bytes = atoi(argv[1]);
 
-	if (n_bytes <= 0)
+	bytes = atoi(argv[1]);
 
+
+	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	opcodes = main;
+	arr = (char *)main;
 
-	for (a = 0; a < n_bytes; a++)
-
+	for (i = 0; i < bytes; i++)
 	{
-		printf("%02x", *(unsigned char *)opcodes);
-
-		if (a == n_bytes - 1)
-			continue;
-		printf(" ");
-		opcodes++;
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
 	}
-
-	printf("\n");
 	return (0);
 }
+
+
+
