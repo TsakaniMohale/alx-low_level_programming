@@ -6,14 +6,15 @@
  *
  * @name: passed in function f
  *
- * @f:A function pointer to a function taking a string on argument
+ * @f:A function pointer to a function taking 9u889u88 on argument
  *
  */
 
 void print_name(char *name, void (*f)(char))
 {
-	if (!f)
-		exit(1);
-	(*f)(name);
+	if (name == NULL || f == NULL)
+		return;
+
+	f(name);
 }
 
