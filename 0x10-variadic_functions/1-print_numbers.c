@@ -1,27 +1,12 @@
-#include "stdarg.h"
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - Performs the sum
- * @n: number of values to be addes together
- * Return: Total sum
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-int sum_them_all(const unsigned int n, ...)
+int main(void)
 {
-	va_list Ptr;
-	int sum;
-	unsigned int i;
-
-	if (n == 0)
-		return (0);
-
-	va_start(Ptr, n);
-	sum = 0;
-
-	for (i = 0; i < n; i++)
-		sum = sum + va_arg(Ptr, int);
-
-	va_end(Ptr);
-	return (sum);
+    print_numbers(", ", 4, 0, 98, -1024, 402);
+    return (0);
 }
