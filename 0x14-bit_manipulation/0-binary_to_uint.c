@@ -1,36 +1,32 @@
 #include "main.h"
-#include <stddef.h>
-
 /**
- * binary_to_uint - Binary string to an integer
- * @b: string pointer
- * Return: Base 10
+ * binary_to_uint - convert binary to
+ * unsigned int.
+ * @b: should contain the binary number
+ *
+ * Return: unsigned int
  */
-
 
 unsigned int binary_to_uint(const char *b)
 {
-	int index, base = 1;
-	unsigned int n = 0;
+	int len, base_two;
+	unsigned int res;
 
-	if (b == NULL)
-	{
+	if (!b)
 		return (0);
-	}
-
-	for (index = 0; b[index] != '\0'; index++)
+	res = 0;
+	for (len = 0; b[len] != '\0'; len++)
+		;
+	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
 	{
-		if (b[index] != '1' && b[index] != '0')
-			return (0);
-	}
-
-	for (index -= 1; index >= 0; index--)
-	{
-		if (b[index] != '0')
+		if (b[len] != '0' && b[len] != '1')
 		{
-			n += base;
+			return (0);
 		}
-		base *= 2;
+		if (b[len] & 1)
+		{
+			res += base_two;
+		}
 	}
-	return (n);
+	return (res);
 }
