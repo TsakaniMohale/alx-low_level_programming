@@ -1,0 +1,8 @@
+# This is a make file for main.c and school.c
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
